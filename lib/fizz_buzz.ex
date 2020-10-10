@@ -11,5 +11,5 @@ defmodule FizzBuzz do
     |> Enum.map(&String.to_integer/1)
   end
 
-  defp handle_file_read({:error, reason}), do: reason
+  defp handle_file_read({:error, reason}), do: "File reading error. Reason: #{reason}"
 end
